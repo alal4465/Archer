@@ -3,6 +3,7 @@
 #include <string_view>
 #include <ctime>
 #include <string>
+
 #define LOG_DEBUG(msg) ::Log::impl::print_log(msg, ::Log::LogLevel::DEBUG, __LINE__, __FILE__, true)
 #define LOG_INFO(msg)  ::Log::impl::print_log(msg, ::Log::LogLevel::INFO, __LINE__, __FILE__)
 #define LOG_WARN(msg)  ::Log::impl::print_log(msg, ::Log::LogLevel:::WARN, __LINE__, __FILE__)
