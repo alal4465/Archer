@@ -1,7 +1,7 @@
 #include "utils.hpp"
 
 void Coverage::Os::enable_sedebug_privileges() {
-	Handle hToken = Os::make_handle(nullptr);
+	auto hToken = Os::make_handle(nullptr);
 	assert(OpenProcessToken(GetCurrentProcess(), TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, hToken.get()));
 
 	LUID luid{ 0 };
