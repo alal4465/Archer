@@ -28,7 +28,7 @@ namespace Log {
 
 	namespace impl{
 		inline std::string timestamp() {
-			std::time_t result = std::time(nullptr);
+			auto result = std::time(nullptr);
 			auto readable_timestamp = std::string(std::asctime(std::localtime(&result)));
 			readable_timestamp.pop_back();
 			
@@ -40,13 +40,18 @@ namespace Log {
 				return;
 			}
 			
-			
-			std::string metadata = print_metadata ? timestamp() +  ", " + filename + "@" + std::to_string(line) + ", " : "";
+			std::string printable_log(
+				"[" + 
+				(print_metadata ? timestamp() + ", " + filename + "@" + std::to_string(line) + ", " : "") +
+				log_levels_printable[static_cast<unsigned int>(verbosity)].data() +
+				"] : " +
+				msg
+			);
 			if (verbosity >= LogLevel::WARN) {
-				std::cerr << "[" << metadata << log_levels_printable[static_cast<unsigned int>(verbosity)] << "] : " << msg << "\n";
+				std::cerr << printable_log << "\n";
 			}
 			else {
-				std::cout << "[" << metadata << log_levels_printable[static_cast<unsigned int>(verbosity)] << "] : " << msg << "\n";
+				std::cout << printable_log << "\n";
 			}
 		}
 	}
