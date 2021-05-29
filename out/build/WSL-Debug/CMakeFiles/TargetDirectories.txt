@@ -1,0 +1,5 @@
+/mnt/c/Users/alon/source/repos/Archer/out/build/WSL-Debug/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/alon/source/repos/Archer/out/build/WSL-Debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/alon/source/repos/Archer/out/build/WSL-Debug/Archer/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/alon/source/repos/Archer/out/build/WSL-Debug/Archer/CMakeFiles/Archer.dir
+/mnt/c/Users/alon/source/repos/Archer/out/build/WSL-Debug/Archer/CMakeFiles/edit_cache.dir

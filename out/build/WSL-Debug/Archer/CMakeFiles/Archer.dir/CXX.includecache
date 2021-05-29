@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/alon/source/repos/Archer/Archer/Archer.cpp
+iostream
+-
+
+/mnt/c/Users/alon/source/repos/Archer/Archer/coverage/DebuggerBase.hpp
+
+/mnt/c/Users/alon/source/repos/Archer/Archer/coverage/linux/Debugger.cpp
+Debugger.hpp
+/mnt/c/Users/alon/source/repos/Archer/Archer/coverage/linux/Debugger.hpp
+
+/mnt/c/Users/alon/source/repos/Archer/Archer/coverage/linux/Debugger.hpp
+../DebuggerBase.hpp
+/mnt/c/Users/alon/source/repos/Archer/Archer/coverage/DebuggerBase.hpp
+
