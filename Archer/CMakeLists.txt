@@ -21,7 +21,7 @@ if (WIN32)
   SET(OS_SPECIFIC_SRC_FILES
        "coverage/win/Debugger.hpp"
        "coverage/win/Debugger.cpp"
-       "coverage/win/Handle.hpp"
+       "coverage/win/HandleWrapper.hpp"
        "coverage/win/utils.hpp"
        "coverage/win/utils.cpp"
   )

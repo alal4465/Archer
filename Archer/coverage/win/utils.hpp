@@ -1,7 +1,7 @@
 #pragma once
 #include <Windows.h>
 #include <cassert>
-#include "Handle.hpp"
+#include "HandleWrapper.hpp"
 #include "../../fuzzer/Logging.hpp"
 
 namespace Coverage::Os {

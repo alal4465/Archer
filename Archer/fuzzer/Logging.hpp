@@ -19,7 +19,7 @@ namespace Log {
 	};
 	constexpr LogLevel MIN_LOG_LEVEL = LogLevel::DEBUG;
 
-	namespace impl{
+	namespace impl {
 		constexpr std::string_view log_levels_printable[static_cast<unsigned int>(LogLevel::LOG_LEVELS_SIZE)] = {
 			"Debug",
 			"Info",
