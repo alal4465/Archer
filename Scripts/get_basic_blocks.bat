@@ -7,6 +7,6 @@ if "%1"=="" goto :missing_arg
 goto end
 
 :missing_arg
-echo "Usage: ./get_basic_blocks.bat <analyzed-path-full-path>"
+echo "Usage: ./get_basic_blocks.bat <analyzed-binary-full-path>"
 
 :end
